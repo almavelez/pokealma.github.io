@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poke</title>
+    <link rel="stylesheet" href="./estilos.css">
+
+</head>
+
+<body>
+    <header class="header2">
+        <div class="logo">PokeDex</div>
+        <nav class="posbtn">
+            <a id="inicio" href="index.html">Inicio</a>
+            <!-- <button class="perfilbtn">Perfil</button> -->
+            <!-- Trigger/Open The Modal -->
+            <button id="perfilbtn">Contacto</button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <section class="infp">
+                        <h2>Informacion De Contacto</h2>
+                        <p>Nombre: Alma Angelica Velez Muñoz</p>
+                        <p>Correo: velezalma00@gmail.com</p>
+                        <p>Tel: 55555555555</p>
+                    </section>
+                    <!-- <p> Nombre: Alma Angelica Velez Muñoz</p> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h1>PokeList</h1>
+    <input id="buscar" type="text" placeholder="Busca Tu Pokemon" color="#fff">
+    <div id="pokeData"></div>
+    </div>
+    <footer class="pagination">
+        <ul class="pagination">
+            <button id="previous" class="page-item"><a class="page-link" href="#">Previous</a></button>
+            <button id="next" class="page-item"><a class="page-link" href="#">Next</a></button>
+        </ul>
+    </footer>
+    <script src="./vistas.js"></script>
+    <script src="./perfil.js"></script>
+
+</body>
+
+</html>

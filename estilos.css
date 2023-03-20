@@ -1,0 +1,240 @@
+
+*{margin:0; padding:0}
+body {
+    background: rgb(122, 247, 230);
+    background: no-repeat;
+    background: linear-gradient(
+      90deg,
+      rgb(85, 189, 180) 5%,
+      rgb(108, 240, 222) 29%,
+      rgb(182, 242, 239) 66%
+    );
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+  }
+  h1 {
+    color: white;
+  }
+  
+  #pokeData {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+.poke-cont{
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(234, 236, 236);
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+}
+
+.name {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .pagination {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+  }
+  .page-link{
+    text-decoration: none;
+    color: rgb(75, 76, 77);
+    font-family: "Gill Sans", sans-serif;
+    
+  }
+  .page-item{
+    border:none;
+    height: 40px;
+    width: 70px;
+    border-radius: 10%;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  } 
+  .btn-pokemon, #myBtn{
+    border:none;
+    height: 40px;
+    width: 100px;
+    border-radius: 8%;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  }
+
+  
+ .scard{
+  display: none;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+ }
+  .perfil-cont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+  }
+   /* frente hp */
+ .poke-block-b{
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(231, 222, 222);
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.poke-block-b p {
+  margin: 5px;
+}
+/* contenedor */
+ .perfil-cont{
+  display: none;
+  border-radius: 10px;
+  padding: 5px;
+  /* background-color: rgb(231, 222, 222); */
+  /* box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5); */
+  width: 90%;
+  height: 50%;
+}
+.stat-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: left;
+}
+header{
+  width: 100%;
+  overflow: hidden;
+  background: rgb(100, 214, 214);
+  margin-bottom: 20px;
+}
+header .logo{
+  color:antiquewhite;
+  font-size: 50px;
+  line-height: 200px;
+  float: left;
+}
+header nav{
+  float:right;
+  line-height: 200px;
+}
+#perfilbtn {
+  background:none;
+  display: inline-block;
+  border: none;
+  color:rgb(245, 243, 241);
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: bold;
+}
+#perfilbtn:hover{
+  background: rgb(221, 214, 214);
+  border-radius: 20px;
+}
+#inicio{
+  background:none;
+  display: inline-block;
+  border: none;
+  color:rgb(245, 243, 241);
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: bold;
+}
+#inicio:hover{
+  background: rgb(221, 214, 214);
+  border-radius: 20px;
+}
+.header2 {
+  position: fixed;
+  height: 70px;
+}
+/* pokedex text */
+.header2 .logo {
+  line-height: 80px;
+  font-size: 30px;
+}
+.header2 nav {
+  line-height: 70px;
+}
+h1{
+  padding-top: 100px;
+}
+.infp {
+  border-radius: 10px;
+  padding: 5px;
+  width: 90%;
+  height: 90%;
+  margin-bottom: 20px;
+}
+.infp p{
+margin-bottom: -40px;
+}
+.infp h2 {
+  margin-bottom: -5px
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgb(231, 222, 222);
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 15% auto; 
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%; 
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input{
+  border: none;
+  border-radius: 10px;
+  color:rgb(107, 104, 100);
+  outline:none ;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+input:hover{ 
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+ 
+}
+::placeholder{
+  color:rgb(228, 225, 222);
+  font-weight: normal;
+}
